@@ -1,0 +1,10 @@
+[package]
+name = "darwin-core-to-rerun"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+polars = { version = "0.43.1", features = ["polars-io", "rows"] }
+rerun = { version = "0.19.0", features = ["native_viewer", "web_viewer", "run"] }
+rerun-earth = { path = "../rerun-earth" }
